@@ -1,5 +1,5 @@
---temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\obj\Debug\netcoreapp1.0\
---out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\bin\Debug\netcoreapp1.0\Texter.dll
+--temp-output:C:\Users\epicodus\Desktop\Texter-Application\src\Texter\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\Texter-Application\src\Texter\bin\Debug\netcoreapp1.0\Texter.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -207,14 +207,14 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\obj\Debug\netcoreapp1.0\Texterdotnet-compile.deps.json",Texter.deps.json
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Program.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Startup.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Controllers\HomeController.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20170508221303_AddContact.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\20170508221303_AddContact.Designer.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Migrations\TexterDbContextModelSnapshot.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\Contact.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\EnvironmentVariables.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\Message.cs
-C:\Users\epicodus\Documents\Visual Studio 2015\Projects\Texter\src\Texter\Models\TexterDbContext.cs
+--resource:"C:\Users\epicodus\Desktop\Texter-Application\src\Texter\obj\Debug\netcoreapp1.0\Texterdotnet-compile.deps.json",Texter.deps.json
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Program.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Startup.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Migrations\20170509170529_Initial.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Migrations\20170509170529_Initial.Designer.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Migrations\TexterDbContextModelSnapshot.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Models\Contact.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Models\EnvironmentVariables.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Models\Message.cs
+C:\Users\epicodus\Desktop\Texter-Application\src\Texter\Models\TexterDbContext.cs

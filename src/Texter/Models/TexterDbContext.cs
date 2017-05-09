@@ -9,11 +9,11 @@ namespace Texter.Models
 {
     public class TexterDbContext : DbContext
     {
+        public DbSet<Contact> Contacts { get; set; }
         public TexterDbContext()
         {
 
         }
-        public DbSet<Contact> Contacts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {

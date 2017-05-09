@@ -18,11 +18,14 @@ namespace Texter.Migrations
 
             modelBuilder.Entity("Texter.Models.Contact", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
                     b.Property<string>("Name");
 
                     b.Property<string>("PhoneNumber");
 
-                    b.HasKey("Name");
+                    b.HasKey("Id");
 
                     b.ToTable("Contacts");
                 });

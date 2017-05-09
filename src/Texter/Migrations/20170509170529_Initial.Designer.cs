@@ -8,8 +8,8 @@ using Texter.Models;
 namespace Texter.Migrations
 {
     [DbContext(typeof(TexterDbContext))]
-    [Migration("20170508221303_AddContact")]
-    partial class AddContact
+    [Migration("20170509170529_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,11 +19,14 @@ namespace Texter.Migrations
 
             modelBuilder.Entity("Texter.Models.Contact", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
                     b.Property<string>("Name");
 
                     b.Property<string>("PhoneNumber");
 
-                    b.HasKey("Name");
+                    b.HasKey("Id");
 
                     b.ToTable("Contacts");
                 });

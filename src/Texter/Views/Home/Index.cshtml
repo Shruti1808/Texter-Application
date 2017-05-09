@@ -1,38 +1,24 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>AJAX Demo</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-</head>
-<body>
+﻿@{ 
+    ViewData["title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
     <h2>Awesome Text Messaging App!</h2>
     <hr />
 
     <h2 class="display-contact">Display contact</h2>
     <div id="result"></div>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.display-contact').click(function () {
-                $.ajax({
-                    type: 'GET',
-                    url: '@Url.Action("DisplayContact")',
-                    success: function (result) {
-                        console.log(result);
-                        var resultString = 'Name: ' + result.name + '. Phone: ' + result.phoneNumber;
-                        $('#result').html(resultString);
-                    }
-                });
-            });
-
-        });
-    </script>
    
     <br />
     @Html.ActionLink("View all Messages", "GetMessages")
     <br />
     @Html.ActionLink("Send a new message", "SendMessage")
 
-</body>
-</html>
+    <form action="AddContact" class="add-contact">
+        <label for="Name">Name:</label>
+        <input type="text" name="Name" />
+        <label for="phone-number">Phone Number</label>
+        <input type="number" name="PhoneNumber"/>
+        <button type="submit">Submit</button>
+    </form>
+<div id="new-contact"></div>

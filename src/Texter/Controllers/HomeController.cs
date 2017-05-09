@@ -10,6 +10,12 @@ namespace Texter.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly TexterDbContext _db;
+
+        public HomeController(TexterDbContext db)
+        {
+            _db = db;
+        }
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -44,5 +50,14 @@ namespace Texter.Controllers
             Contact contact = new Contact("Bill", "+12065546435", 1);
             return Json(contact);
         } 
+
+        [HttpPost]
+        public IActionResult AddContact(string Name, string PhoneNumber)
+        {
+            Contact newContact = new Contact(Name, PhoneNumber);
+            _db.Contacts.Add(newContact);
+            _db.SaveChanges();
+            return Json(newContact);
+        }
     }
 }
