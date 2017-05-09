@@ -3,12 +3,12 @@
 <hr />
 @using (Html.BeginForm())
 {
-    @Html.LabelFor(model => model.To)
+    <label for="Contacts">Contacts</label>
     @Html.DropDownList("Contacts", new MultiSelectList(@ViewData["ContactNames"] as System.Collections.IEnumerable, "PhoneNumber", "Name"), "Choose", new {id = "drop-down-list", multiple ="multiple"})
-    @Html.LabelFor(model => model.From)
-    @Html.TextBoxFor(model => model.From)
-    @Html.LabelFor(model => model.Body)
-    @Html.TextBoxFor(model => model.Body)
+    <label for="From">From</label>
+    @Html.TextBox("From")
+    <label for="Body">Body</label>
+    @Html.TextBox("Body")
     <input type="submit" value="Send!" />
 }
 

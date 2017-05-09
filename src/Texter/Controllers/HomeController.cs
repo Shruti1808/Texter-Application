@@ -37,9 +37,16 @@ namespace Texter.Controllers
         }
 
         [HttpPost]
-        public IActionResult SendMessage(Message newMessage)
+        public IActionResult SendMessage(List<String> Contacts, String From, String Body)
         {
-            newMessage.Send();
+            foreach(var contact in Contacts)
+            {
+                Message newMessage = new Message();
+                newMessage.To = contact;
+                newMessage.From = From;
+                newMessage.Body = Body;
+                newMessage.Send();
+            }
             return RedirectToAction("Index");
         }
 
