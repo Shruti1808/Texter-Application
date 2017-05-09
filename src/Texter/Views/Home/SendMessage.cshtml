@@ -5,7 +5,7 @@
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.To)
-    @Html.TextBoxFor(model => model.To)
+    @Html.DropDownListFor(model => model.To, new SelectList(@ViewData["ContactNames"] as System.Collections.IEnumerable, "PhoneNumber", "Name"), "Choose", new {id = "drop-down-list"})
     @Html.LabelFor(model => model.From)
     @Html.TextBoxFor(model => model.From)
     @Html.LabelFor(model => model.Body)

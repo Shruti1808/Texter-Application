@@ -32,6 +32,7 @@ namespace Texter.Controllers
         //To Send a message:  this will be a POST request.
         public IActionResult SendMessage()
         {
+            ViewBag.ContactNames = _db.Contacts;
             return View();
         }
 
